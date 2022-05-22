@@ -1,8 +1,8 @@
 import React from "react";
 
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container'
+// import Container from '@mui/material/Container'
 
 
 // import Box from '@mui/material/Box';
@@ -22,7 +22,13 @@ const Footer = () => {
 
       <Grid container spacing={0} marginTop={1} marginBottom={1} >
         <Grid item xs={12} md={8} padding={1} sx={{border:'1px solid #00f', backgroundColor: '#f07'}}>
-          <p>vsdvsd</p> 
+          <nav>
+            <ul>
+            <li><a href="https://github.com/patricio-dsgn/rabbithole">https://github.com/patricio-dsgn/rabbithole</a></li>
+            <li><a href="https://rabbithole-rho.vercel.app/">https://rabbithole-rho.vercel.app/</a></li>
+            </ul>
+          </nav>
+          <p color='color1'>© 2022</p>
         </Grid>
 
         <Grid item xs={12} md={4} sx={{border:'1px solid #00f', backgroundColor: '#f70'}}> 
@@ -35,14 +41,9 @@ const Footer = () => {
 
 
 
-      <p color='color1'>© 2022</p>
+      
 
-    <nav>
-      {/* <Btn size="btn-s" txt="youtube"/>
-      <Btn size="btn-m" txt="twitter"/>
-      <Btn size="btn-s" txt="facebook"/>
-      <Btn size="btn-l" txt="instagram"/> */}
-    </nav>
+
 
   </footer>
   

@@ -12,10 +12,8 @@ const Me = () => {
 
       <Grid item xs={12} sm={8} md={9}>
         <Box border={2}>
-          
           <Typography m={3} variant="h2" component="h1">API integrada con ReactJS</Typography>
-          
-          
+          <Typography m={3} variant="h3" component="h2">Ejemplo</Typography>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nisi dolorum est quos eaque debitis tenetur reprehenderit corporis. Numquam nobis quos explicabo ducimus perferendis asperiores, nemo eligendi quibusdam nostrum necessitatibus.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus enim esse saepe id nihil fugit nesciunt itaque error, ipsum sunt. Porro at molestiae, voluptatem ex natus alias. Iure, impedit cumque?
         </Box>

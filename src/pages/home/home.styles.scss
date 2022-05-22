@@ -1,0 +1,59 @@
+body{
+    background-image: url("../../assets/bg/alice1.webp");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.boxi{
+
+    border-radius: 20px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(255,255,255,0.2);
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.roti2{ transform: rotate(2deg);}
+.roti4{ transform: rotate(4deg);}
+.roti6{ transform: rotate(6deg);}
+.roti-2{ transform: rotate(-2deg);}
+.roti-4{ transform: rotate(-4deg);}
+.roti-6{ transform: rotate(-6deg);}
+
+
+.info{
+    width: 90%;
+    margin: 5%;
+    border-radius: 20px;
+    filter: hue-rotate(300deg);
+    // transform: rotate(0deg);
+    // transition: all 3s ease ;
+    transform: rotate3d(1, 1, 0, 0deg);
+    animation: example 10s infinite;
+}
+
+@keyframes example {
+    0%   {transform: rotate3d(1, 1, 0, 0deg);}
+    80%  {transform: rotate3d(1, 1, 0, 0deg);}
+    100% {transform: rotate3d(1, 1, 0, 360deg);}
+
+}
+
+
+ul{
+    li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style: none;
+        span{
+            width: 80%;        
+        }
+        *{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
