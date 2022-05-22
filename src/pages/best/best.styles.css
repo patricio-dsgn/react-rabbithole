@@ -1,0 +1,15 @@
+
+img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;
+    border: 1px solid #000;
+}
+
+
+.mini-block{
+    border: 1px solid #000;
+    margin: 10px auto;
+    width: 80%;
+}
