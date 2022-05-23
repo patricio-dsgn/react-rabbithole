@@ -9,7 +9,6 @@ import {theme} from './assets/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Pattern HOC
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>

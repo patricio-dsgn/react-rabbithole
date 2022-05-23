@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from 'react';
 
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -43,12 +43,15 @@ const Me = () => {
 
         <Grid item xs={12} sm={10} md={7} component="div">
           <Box className="roti-2">
+          <Suspense fallback={<div>Loading...</div>}>
+
             <CardMedia
               // className={classes.media}
               image={require('../../assets/api/machine.gif')} // require image
               title="Contemplative Reptile"
               style={styles.media} // specify styles
             />
+            </Suspense>
           </Box>
         </Grid>
 
@@ -83,9 +86,12 @@ const Me = () => {
         </Grid>
 
         <Grid m={0} item xs={12} md={8}>
+        <Suspense fallback={<div>Loading...</div>}>
+
           <Box>
             <img className="info" src={infoapi} alt="" />
           </Box>
+          </Suspense>
         </Grid>
 
         <Grid m={0} item xs={12} md={4}>
