@@ -41,7 +41,7 @@ const ResponsiveAppBar = () => {
 
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton 
+            <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -50,7 +50,7 @@ const ResponsiveAppBar = () => {
               color="inherit">
               <MenuIcon />
             </IconButton>
-            <Menu 
+            <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -70,7 +70,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   {/* <Typography textAlign="center">{page}</Typography> */}
-                  <NavLink key={page} activeClassName="selected" exact to={page}>{page}</NavLink>
+                  <NavLink key={page} activeClassName="selected" exact to={page} className="menu-mobile">{page}</NavLink>
                 </MenuItem>
               ))}
 

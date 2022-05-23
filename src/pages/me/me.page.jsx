@@ -3,12 +3,13 @@ import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 
+import "./me.styles.scss"
 
 
 const Me = () => {
   return <>
   
-    <Grid container spacing={0} mt={8}>
+    <Grid className="page-me" container spacing={0} mt={8}>
 
       <Grid item xs={12} sm={8} md={9}>
         <Box border={2}>

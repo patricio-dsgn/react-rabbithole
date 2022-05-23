@@ -1,4 +1,4 @@
-body{
+.page-home{
     background-image: url("../../assets/bg/alice1.webp");
     background-size: cover;
     background-position: center center;
@@ -6,7 +6,6 @@ body{
 }
 
 .boxi{
-
     border-radius: 20px;
     background: rgba(0,0,0,0.6);
     color: #fff;
@@ -15,14 +14,12 @@ body{
     padding: 10px;
 }
 
-
 .roti2{ transform: rotate(2deg);}
 .roti4{ transform: rotate(4deg);}
 .roti6{ transform: rotate(6deg);}
 .roti-2{ transform: rotate(-2deg);}
 .roti-4{ transform: rotate(-4deg);}
 .roti-6{ transform: rotate(-6deg);}
-
 
 .info{
     width: 90%;

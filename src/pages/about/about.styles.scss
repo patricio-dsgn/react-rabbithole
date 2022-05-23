@@ -1,0 +1,60 @@
+.page-about{
+    position: relative;
+    display: block;
+    background: url("../../assets/bg/coder1.gif") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 0;
+    // border: 5px solid #000;
+    text-align: center;
+    height: 600px;
+}
+
+//     .error-msg{
+//         display: block;
+//         position: absolute;
+//         z-index: 200;
+//         text-align: center;
+//         background: rgba(0,0,0,0.8);
+//         color: #fff;
+//         padding: 20px;
+//         border-radius: 20px;
+//         top: 120px;
+//         right: 130px;
+            
+//         h1{
+//             font-size: 160%;
+//             margin-bottom: 20px;
+//         }
+
+//         p{
+//             font-size: 100%;
+//         }
+//     }
+// }
+
+
+// @media (max-width: 600px) {
+//     .page-error{
+//         height: 500px;
+//         // border: 5px solid #0d0;
+
+//         .error-msg{
+//             right:  20px;
+//             top: 70px;
+//         }
+//     }
+// }
+
+// @media (max-width: 380px) {
+//     .page-error{
+//         height: 500px;
+//         // border: 5px solid #d00;
+
+//         .error-msg{
+//             left: 20px;
+//             margin: auto;
+//             padding: 10px;    
+//         }
+//     }
+//   }

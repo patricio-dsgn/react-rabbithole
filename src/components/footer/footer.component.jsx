@@ -2,6 +2,7 @@ import React from "react";
 
 // import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Link from '@mui/material/Link';
 // import Container from '@mui/material/Container'
 
 
@@ -13,25 +14,34 @@ import Grid from '@mui/material/Grid';
 import {ReactComponent as Isotipo} from "../../assets/brand/isotipo.svg";
 
 import "./footer.styles.scss";
+import Typography from '@mui/material/Typography'
 
 
 const Footer = () => {
+
+
+  const links = [
+    'https://github.com/patricio-dsgn/rabbithole',
+    'https://rabbithole-rho.vercel.app/'
+  ]
+
   return (
     <footer>
-
-
       <Grid container spacing={0} marginTop={1} marginBottom={1} >
-        <Grid item xs={12} md={8} padding={1} sx={{border:'1px solid #00f', backgroundColor: '#f07'}}>
+        <Grid item xs={12} md={8} padding={1}>
           <nav>
             <ul>
-            <li><a href="https://github.com/patricio-dsgn/rabbithole">https://github.com/patricio-dsgn/rabbithole</a></li>
-            <li><a href="https://rabbithole-rho.vercel.app/">https://rabbithole-rho.vercel.app/</a></li>
+            {links.map((link,i) => (
+              <li key={i}>
+                <Link href={link} color="#f07" underline="hover">{link}</Link>
+              </li>  
+            ))}
             </ul>
           </nav>
-          <p color='color1'>© 2022</p>
+          <Typography variant="body1" color="#fff">© 2022</Typography>
         </Grid>
 
-        <Grid item xs={12} md={4} sx={{border:'1px solid #00f', backgroundColor: '#f70'}}> 
+        <Grid item xs={12} md={4}> 
           <Isotipo width="70%" height="70%"/>
         </Grid>
 

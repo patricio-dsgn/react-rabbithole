@@ -1,16 +1,17 @@
-footer{
+footer {
     padding: 10px;
-    background: #000;
+    background: rgb(87, 22, 128);
+    background: linear-gradient(0deg, rgba(87, 22, 128, 1) 0%, rgba(56, 23, 84, 1) 5%, rgba(2, 24, 8, 1) 87%);
     color: #fff;
     text-align: center;
-}
 
-footer nav {
-    margin: 20px;
-}
+    nav {
+        margin: 20px;
+    }
 
-footer a{
-    text-decoration: none;
-    color: #fff;
-    margin: 20px;
+    a {
+        text-decoration: none;
+        color: #fff;
+        margin: 20px;
+    }
 }

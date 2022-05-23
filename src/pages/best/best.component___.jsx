@@ -32,8 +32,8 @@ const Me = () => {
           borderColor='#ff7700' 
           boxShadow='2px 2px 2px 2px rgba(0,0,0,0.3)'>
 
+
           
-          sLorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum rem, consequatur suscipit vitae eius est voluptas et quos eos asperiores recusandae eum ad molestiae quod earum? Dolorem, necessitatibus commodi?
         </Box>
       </Grid>
 
