@@ -9,22 +9,27 @@ import Error404 from "./pages/error404/error404.page";
 import ResponsiveAppBar from './components/responsiveappbar/responsiveappbar.component';
 import Footer from "./components/footer/footer.component";
 
-import './App.css';
+import ThemeProvider from './context/ThemeProvider';
+
+import './App.scss';
 
 const App = () => {
   return (
     <>
-      <ResponsiveAppBar />
+      <ThemeProvider>
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home">{<Redirect to="/" />}</Route>
-        <Route exact path="/best" component={Best} />
-        <Route exact path="/demo" component={Demo} />  
-        <Route path="*" component={Error404} />
-      </Switch>
+        <ResponsiveAppBar />
 
-      <Footer />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home">{<Redirect to="/" />}</Route>
+          <Route exact path="/best" component={Best} />
+          <Route exact path="/demo" component={Demo} />
+          <Route path="*" component={Error404} />
+        </Switch>
+
+        <Footer />
+      </ThemeProvider>
 
     </>);
 };

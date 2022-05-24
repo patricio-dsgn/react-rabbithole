@@ -1,5 +1,9 @@
 # Examen certificación React JS
 
+## 0. Uso de Context API
+
+- Este proyecto usa Context API para cambiar el tema de la barra de navegación `component/responsiveappbar/responsiveappbar.component.jsx` mediante `ThemeProvider`
+
 ## 1. Conexión y consumo de apis
 
 - **Fetch**: en la página [Best](https://rabbithole-rho.vercel.app/best)
@@ -55,10 +59,6 @@ Aplicar basado en **patrones de arquitecturas** vistos en el curso y buenas prá
 
 - clean arquitecture: se han aplicado el patrón explicado en el proyecto 1 
 
-- webpack: ________________________.
-
-- babel: ________________________.
-
 - lazy loading: Se ha aplicado en la imágenes en el componente `pages/home/home.page.jsx` usando Suspense.
 
 - HOC de ErrorBoundary (límites de error) con recovery hacia la página principal: se ha implentado en `pages/demo/demo.page.jsx`, usanado el componente `<Error/>` en la inclusión de la app tipo pokedex, `components/demoapp/demoapp.component.jsx` (hay un error simulado que está comentado en las líneas 8 y 9).
@@ -80,19 +80,13 @@ Aplicar basado en **patrones de arquitecturas** vistos en el curso y buenas prá
 
 ## 8. Custom Hook
 
-- Se ha creado Custom hook en:
+- Se ha creado el hook personalizado "useTheme"(linea 24):
 
-`components/demoapp/demoapp.components.jsx`________________________.
+`context/ThemeProvider.js`
 
 ## 9. Prop-Types
 
-- Se ha utilizado Prop-Types en:
-
-`components/demoapp/demoapp.components.jsx`________________________.
-
-`components/demoapp/demoapp.components.jsx`________________________.
-
-`components/demoapp/demoapp.components.jsx`________________________.
+- Se ha utilizado Prop-Types.
 
 ## 11. Despliegue en producción en Vercel
 
@@ -108,11 +102,7 @@ Aplicar basado en **patrones de arquitecturas** vistos en el curso y buenas prá
 
 ## 13. Styled-Components
 
-- Se ha utilizado  en:
-
-`components/demoapp/demoapp.components.jsx`________________________.
-
----------
+- Se ha utilizado
 
 ## INSTRUCTIONS
 

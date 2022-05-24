@@ -12,9 +12,15 @@ import {NavLink} from "react-router-dom";
 import logo from "../../assets/brand/imagotipo.svg";
 import "./responsiveappbar.styles.scss";
 
+import { useTheme } from '../../context/ThemeProvider';
+
+
 const pages = ['Best', 'Demo'];
 
 const ResponsiveAppBar = () => {
+
+  const { theme, toggleTheme, themeName } = useTheme();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -26,9 +32,12 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed" color='color1'>
+    <AppBar position="fixed" color='color1' className="App-header" style={{ backgroundColor: theme.background, color: theme.textColor }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
+
+        
+        
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -76,12 +85,14 @@ const ResponsiveAppBar = () => {
               <img src={logo} className='logo-bar' alt="" />
             </NavLink>
           </Box>
-
+          
           <Box className="menu" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <NavLink key={page} activeClassName="selected" exact to={page}>{page}</NavLink>
             ))}
           </Box>
+
+          <button className="btn-theme"onClick={toggleTheme}>Tema: <br /> {themeName}</button>
 
         </Toolbar>
       </Container>

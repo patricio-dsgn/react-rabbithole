@@ -11,7 +11,7 @@ import "./demo.styles.scss"
 const Demo = () => {
 
   return (
-    <div className="page-me">
+    <div className="page-demo">
 
       <Grid container justifyContent={'center'} p={3}>
 

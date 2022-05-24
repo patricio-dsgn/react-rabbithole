@@ -17,7 +17,6 @@ const Footer = () => {
   return (
     <footer>
       <Grid container spacing={0} marginTop={1} marginBottom={1} >
-        
         <Grid item xs={12} md={8} padding={1}>
           <nav>
             <ul>
@@ -34,7 +33,6 @@ const Footer = () => {
         <Grid item xs={12} md={4}>
           <Isotipo width="70%" height="70%" />
         </Grid>
-
       </Grid>
     </footer>
   );
