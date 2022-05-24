@@ -1,7 +1,4 @@
 import React from "react";
-import "./best.styles.scss"
-
-import { listApiData } from "../../assets/listApiData";
 
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -14,37 +11,37 @@ import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 
+import "./best.styles.scss"
+import { listApiData } from "../../assets/listApiData";
 
 const Best = () => {
 
-
   return (
 
-    <div className="page page-best">
+    <div className="page-best">
 
       <Grid container justifyContent={'center'} p={3}>
 
-          <Grid item xs={12} pt={40} align="center">
-            <Typography m={3} sx={{ fontSize: { md: 60, sm: 50, xs: 40 } }} variant="h2" component="h1" color="#fff">
-              Recolección de API para desarrollo
-            </Typography>
+        <Grid item xs={12} pt={30} align="center">
+          <Typography m={3} sx={{ fontSize: { md: 60, sm: 50, xs: 40 } }} variant="h2" component="h1" color="#fff">
+            Recolección de API para desarrollo
+          </Typography>
 
-
-            <Typography m={3} sx={{ fontSize: { md: 20, sm: 15, xs: 10 } }} variant="body1" component="p" color="#fff">
+          <Typography m={3} sx={{ fontSize: { md: 20, sm: 15, xs: 10 } }} variant="body1" component="p" color="#fff">
             Estas API son unas APIs divertidas, interesantes y diferentes.
-            </Typography>
-            
-            <Typography m={3} sx={{ fontSize: { md: 20, sm: 15, xs: 10 } }} variant="body1" component="p" color="#fff">
+          </Typography>
+
+          <Typography m={3} sx={{ fontSize: { md: 20, sm: 15, xs: 10 } }} variant="body1" component="p" color="#fff">
             Son gratuitos, no requieren que sepas cómo manejar OAuth.
-            </Typography>
+          </Typography>
 
-            <Typography m={3} sx={{ fontSize: { md: 20, sm: 15, xs: 10 } }} variant="body1" component="p" color="#fff">
+          <Typography m={3} sx={{ fontSize: { md: 20, sm: 15, xs: 10 } }} variant="body1" component="p" color="#fff">
             Estas son las categorías en las que se encuentran estas API, en este orden:
-            </Typography>
+          </Typography>
 
-          </Grid>
+        </Grid>
 
-          <Grid item xs={12} sm={10} md={7}>
+        <Grid item xs={12} sm={10} md={7}>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
 
@@ -78,20 +75,14 @@ const Best = () => {
                   </TableRow>
                 ))}
               </TableBody>
+
             </Table>
           </TableContainer>
 
         </Grid>
       </Grid>
-      {/* <h1>Best</h1>  
-    {listApiData.map((data, key) => {
-        return(
-        
-        <p key={key}>{data.title}</p>
-        
-        )
-    })} */}
-    </div>);
+    </div>
+  );
 };
 
 export default Best;

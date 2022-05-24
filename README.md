@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Examen certificación React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Conexión y consumo de apis
 
-## Available Scripts
+- **Fetch**: en la página [Best](https://rabbithole-rho.vercel.app/best)
+se ha implementado una tabla de información con desde un archivo json.
 
-In the project directory, you can run:
+- **Axios**: en la página [Demo](https://rabbithole-rho.vercel.app/demo)
+se ha implementado una app para consultar información de pokemones usando [pokeapi](https://pokeapi.co/).
 
-### `npm start`
+## 2. Creación de rutas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Navegación**: mediante [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
+se ha implementado el siguiente esquema de navegación
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[sitio](https://rabbithole-rho.vercel.app/best)
 
-### `npm test`
+        Home
+        |
+        |--Best
+        |
+        |--Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        Error 404
 
-### `npm run build`
+<kbd style="width:80%;">
+<img src="./map.png"/>
+</kbd>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Lazy loading**: para optimizar las cargas se ha implementado en imágenes el componente de página **Home**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3. Readme con
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- la explicación del patrón de arquitectura utilizado
 
-### `npm run eject`
+- patrones de diseños utilizados
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- descripción del proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 4. Arquitectura limpia
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aplicar basado en **patrones de arquitecturas** vistos en el curso y buenas prácticas de **Code Splitting**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- clean arquitecture
 
-## Learn More
+- webpack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- babel
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- lazy loading
 
-### Code Splitting
+- HOC de ErrorBoundary (límites de error) recovery hacia la página principal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 5. Patrones de diseños
 
-### Analyzing the Bundle Size
+- Aplicar algunos aplicados en el curso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 6. Página not found 404
 
-### Making a Progressive Web App
+- Implementación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 7. Aplicar el uso de hooks y ciclos de vida basado en componentes funcionales
 
-### Advanced Configuration
+## 8. Creación de algunos custom hook
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 9. Utilización de Prop-Types en por lo menos 3 componentes
 
-### Deployment
+## 11. Despliegue en producción en Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 12. La UI la pueden implementar como mas les acomode y crear el responsive design
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 13. Investigar y crear algunos componentes de estilos (Styled-Components)

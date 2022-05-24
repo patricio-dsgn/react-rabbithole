@@ -5,21 +5,15 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 
-
+import infoapi from '../../assets/api/api2.png'
 
 import { ReactComponent as Rabbit1 } from '../../assets/icons/rabbit-07.svg';
 import { ReactComponent as Rabbit2 } from '../../assets/icons/rabbit-03.svg';
 import { ReactComponent as Rabbit3 } from '../../assets/icons/rabbit-06.svg';
 
-// import {ReactComponent as Info} from '../../assets/icons/rabbit-07.svg';
-
 import "./home.styles.scss"
 
-import infoapi from '../../assets/api/api2.png'
-
-
-
-const Me = () => {
+const Home = () => {
 
   const styles = {
     media: {
@@ -32,25 +26,22 @@ const Me = () => {
 
   return (
 
-    <div className="page page-home">
-
+    <div className="page-home">
 
       <Grid container justifyContent={'center'} p={3}>
 
-        <Grid item xs={12} pt={40} align="center">
+        <Grid item xs={12} pt={30} align="center">
           <Typography m={3} sx={{ fontSize: { md: 60, sm: 50, xs: 40 } }} variant="h2" component="h1" color="#fff">Este es un proyecto sobre APIs</Typography>
         </Grid>
 
         <Grid item xs={12} sm={10} md={7} component="div">
           <Box className="roti-2">
-          <Suspense fallback={<div>Loading...</div>}>
-
-            <CardMedia
-              // className={classes.media}
-              image={require('../../assets/api/machine.gif')} // require image
-              title="Contemplative Reptile"
-              style={styles.media} // specify styles
-            />
+            <Suspense fallback={<div>Loading...</div>}>
+              <CardMedia
+                image={require('../../assets/api/machine.gif')} // require image
+                title="Contemplative Reptile"
+                style={styles.media} // specify styles
+              />
             </Suspense>
           </Box>
         </Grid>
@@ -63,20 +54,13 @@ const Me = () => {
           </Box>
         </Grid>
 
-
         <Grid item xs={12} sm={10} md={6}>
           <Box className="boxi roti-2">
-
-            <p className="txt">¿Qué es una API y para qué sirve?</p>
-
             <Typography m={3} variant="h4" component="h2">¿Qué es una API y para qué sirve?</Typography>
-            <Typography m={3} variant="p" component="p">
-              API, es el acronimoApplication Programming Interface, o en español, Interfaz de Programación de Aplicaciones</Typography>
-            <Typography m={3} variant="p" component="p">
-              Se puede definir como una interfaz que favorece la comunicación entre dos sistemas o plataformas diferentes, permitiendo agregar diversas funciones a sitios web y aplicaciones.</Typography>
+            <Typography m={3} variant="p" component="p">API, es el acronimoApplication Programming Interface, o en español, Interfaz de Programación de Aplicaciones</Typography>
+            <Typography m={3} variant="p" component="p">Se puede definir como una interfaz que favorece la comunicación entre dos sistemas o plataformas diferentes, permitiendo agregar diversas funciones a sitios web y aplicaciones.</Typography>
           </Box>
         </Grid>
-
 
         <Grid m={0} item xs={12} md={6}>
           <Box className="boxi roti6">
@@ -86,11 +70,10 @@ const Me = () => {
         </Grid>
 
         <Grid m={0} item xs={12} md={8}>
-        <Suspense fallback={<div>Loading...</div>}>
-
-          <Box>
-            <img className="info" src={infoapi} alt="" />
-          </Box>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Box>
+              <img className="info" src={infoapi} alt="" />
+            </Box>
           </Suspense>
         </Grid>
 
@@ -117,11 +100,9 @@ const Me = () => {
 
       </Grid>
 
-
-
-  </div>
+    </div>
 
   );
 };
 
-export default Me;
+export default Home;

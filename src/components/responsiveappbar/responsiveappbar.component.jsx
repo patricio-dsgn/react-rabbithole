@@ -3,19 +3,16 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-// import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import {NavLink} from "react-router-dom";
 
 import logo from "../../assets/brand/imagotipo.svg";
 import "./responsiveappbar.styles.scss";
 
-const pages = ['Best', 'Me'];
-
+const pages = ['Best', 'Demo'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,17 +25,10 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-
-
   return (
-
     <AppBar position="fixed" color='color1'>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-
-          {/* menu mobile */}
-
-
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -69,11 +59,9 @@ const ResponsiveAppBar = () => {
               }} >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  {/* <Typography textAlign="center">{page}</Typography> */}
                   <NavLink key={page} activeClassName="selected" exact to={page} className="menu-mobile">{page}</NavLink>
                 </MenuItem>
               ))}
-
             </Menu>
           </Box>
 
@@ -83,8 +71,6 @@ const ResponsiveAppBar = () => {
             </NavLink>
           </Box>
 
-          {/* menu desk */}
-
           <Box sx={{ display: { xs: 'none', md: 'flex' }, margin:'1px', height:'50px' }}>
             <NavLink exact to="/">
               <img src={logo} className='logo-bar' alt="" />
@@ -93,13 +79,6 @@ const ResponsiveAppBar = () => {
 
           <Box className="menu" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              // <Button
-              //   key={page}
-              //   onClick={handleCloseNavMenu}
-              //   sx={{ my: 2, color: 'white', display: 'block' }}
-              // >
-              //   {page}
-              // </Button>
               <NavLink key={page} activeClassName="selected" exact to={page}>{page}</NavLink>
             ))}
           </Box>
