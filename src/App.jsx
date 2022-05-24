@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 
 import Home from "./pages/home/home.page";
@@ -19,10 +19,8 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home">{<Redirect to="/" />}</Route>
-        
-          <Route exact path="/best" component={Best} />
-          <Route exact path="/demo" component={Demo} />
-        
+        <Route exact path="/best" component={Best} />
+        <Route exact path="/demo" component={Demo} />  
         <Route path="*" component={Error404} />
       </Switch>
 
